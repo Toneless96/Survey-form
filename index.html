@@ -1,0 +1,142 @@
+<!doctype html>
+
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario Hospital</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="icon" href="./img/icon.png" type="img/png">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto&display=swap" rel="stylesheet">
+        
+    </head>
+
+    <body>
+
+        <div class="body2">
+
+            <header>
+                <h1 id="title">REGISTRO DE PACIENTE</h1>
+            </header>
+
+            <p id="description">En el siguiente formulario se le solicitará llenar algunos campos necesarios 
+                para la entrada del paciente al hospital.</p>
+
+            <form id="survey-form">
+
+                <label id="name-label" for="nombres">Nombre completo</label>
+                <input type="text" id="name" name="nombres" placeholder="Rafael Castillo" required><br>
+
+                <label id="email-label" for="correo">Correo electronico</label>
+                <input type="email" id="email" name="correo" placeholder="ejemplo05@gmail.com" required><br>
+
+                <label id="number-label" for="edad">Edad</label>
+                <input type="number" id="number" name="edad" placeholder="Edad del paciente" min="1" max="150" required><br>
+
+                <div id="gender">
+
+                    <p>Genero</p>
+                    <input type="radio" id="hombre" name="genero" value="hombre" required>
+                    <label for="hombre">Hombre</label>
+
+                    <input type="radio" id="mujer" name="genero" value="mujer" required>
+                    <label for="mujer">Mujer</label>
+
+                </div><br>
+
+
+                <label for="ars">ARS del paciente</label>
+                <select id="dropdown" name="ars" id="ars" required>
+
+                    <option value="" selected disabled hidden>Seleccionar</option>
+
+                    <option value="ARS Humano">ARS Humano</option>
+                    <option value="ARS Universal">ARS Universal</option>
+                    <option value="ARS SeNaSa">ARS SeNaSa</option>
+                    <option value="ARS-CMD">ARS-CMD</option>
+                    <option value="Mapfre Salud">Mapdre Salud ARS</option>
+                    <option value="ARS Futuro">ARS Futuro</option>
+                    <option value="Medicard">Medicard</option>
+                    <option value="ARS Renacer">ARS Renacer</option>
+                    <option value="ARS MetaSalud">ARS MetaSalud</option>
+                    <option value="ARS Simag">ARS Simag</option>
+
+                </select>
+
+                <br>
+
+                <div id="enfermedades">
+
+                    <p>El paciente posee alguna de estas enfermedades contagiosas? (marcar todas las que tenga)</p>
+                    
+                    <input type="checkbox" id="enfermedad1" name="enfermedad1" value="hepatitis b">
+                    <label for="enfermedad1">Hepatitis B</label>
+
+                    <br> 
+
+                    <input type="checkbox" id="enfermedad2" name="enfermedad2" value="hepatitis c">
+                    <label for="enfermedad2">Hepatitis C</label>
+
+                    <br> 
+
+                    <input type="checkbox" id="enfermedad3" name="enfermedad3" value="vih/sida">
+                    <label for="enfermedad3">VIH/SIDA</label>
+
+                    <br> 
+
+                    <input type="checkbox" id="enfermedad4" name="enfermedad4" value="malaria">
+                    <label for="enfermedad4">Malaria</label>
+
+                    <br>
+
+                    <input type="checkbox" id="enfermedad5" name="enfermedad5" value="leishmaniasis">
+                    <label for="enfermedad5">Leishmaniasis</label>
+
+                    <br> 
+
+                    <input type="checkbox" id="enfermedad6" name="enfermedad6" value="tripanosomiasis">
+                    <label for="enfermedad6">Tripanosomiasis</label>
+
+                    <br> 
+
+                    <input type="checkbox" id="enfermedad7" name="enfermedad7" value="toxoplasmosis">
+                    <label for="enfermedad1">Toxoplasmosis</label>
+
+                    <br> 
+
+                    <input type="checkbox" id="enfermedad8" name="enfermedad8" value="criptococosis">
+                    <label for="enfermedad1">Criptococosis</label>
+
+                    <br> 
+
+                    <input type="checkbox" id="enfermedad9" name="enfermedad9" value="otras">
+                    <label for="enfermedad1">Otras</label>
+
+                    <br> 
+                    <br>
+
+                    <label for="otraenfermedad">Por favor, especificar:</label><br>
+                    <textarea id="otraenfermedad" name="otraenfermedad" rows="5" placeholder="Detallar si marcó la casilla: 'Otras'"></textarea>
+
+                </div>
+
+                <br>
+
+                <label for="detalles">Detallar porque va a ingresar al paciente:</label>
+                <textarea id="detalles" name="detalles" rows="10" placeholder="Escribir los detalles aquí" required></textarea>
+
+                <br>
+                <br>
+
+                <input id="submit" type="submit" value="Enviar">
+
+            </form>
+
+        </div>
+
+    </body>
+
+</html>
